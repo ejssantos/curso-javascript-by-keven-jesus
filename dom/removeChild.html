@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - removeChild</title>
+</head>
+<body>
+  <div id="nissan"></div>
+  
+  <script>
+    //O removeChild é um recurso do DOM Api que remove um elemento.
+    var versa = document.createElement("p");
+    versa.innerHTML = "versa";
+
+    var sentra = document.createElement("p");
+    sentra.innerHTML = "sentra";
+
+    document.getElementById("nissan").appendChild(versa);
+    document.getElementById("nissan").appendChild(sentra);
+
+    document.getElementById("nissan").removeChild(versa);
+  </script>
+</body>
+</html>

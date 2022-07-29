@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - querySelector</title>
+</head>
+<body>
+  <!--
+    Importante: o JavaScript é case sensitive
+    O querySelector é uma simplificação do getElementById, getElementsByClassName e do getElementsByTagName.
+    O quertSelector selecione apenas o primeiro elemento.
+  -->
+
+  <div id="teste1">1</div>
+  <div class="teste2">2</div>
+  <p class="teste3">Teste 3</p>
+  <p>Teste 4</p>
+  <p class="teste5">Teste 5</p>
+  
+  <script>
+    /** Para acessar:
+     *    id      use   #
+     *    class   use   .
+     *    seletor ver   formas 001   
+     */
+    console.log(
+      document.querySelector("#teste1")
+    );
+
+    console.log(
+      document.querySelector(".teste2")
+    );
+
+    //001
+    console.log(
+      document.querySelector("p")
+    );
+
+    //002
+    console.log(
+      document.querySelector("p.teste5")
+    );
+  </script>
+</body>
+</html>

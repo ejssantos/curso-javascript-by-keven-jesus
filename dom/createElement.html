@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - createElement</title>
+</head>
+<body>
+  <!--<img id="img1"></img>-->
+
+  <script>
+    //O createElement permite criar elementos.
+
+    var img = document.createElement("img");
+    //imgNova.src="..\assets\img\carinha_verde.png";
+    img.src="https://www.fillmurray.com/640/360";
+    
+    var p = document.createElement("p");
+    p.innerHTML = "Olá, tudo bem?";
+    
+    console.log(img, p);
+
+    //var imgAtual = document.getElementById("img1");
+    //document.body.insertBefore(imgNova, imgAtual);
+  </script>
+</body>
+</html>
